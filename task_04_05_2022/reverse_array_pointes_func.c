@@ -11,6 +11,6 @@ int main()
     int size = sizeof(array) / sizeof(int);
     ptr=array;
     for(int i =0;i<size;i++)
-    printf("before reverse array[]:%d\n",ptr[i]);
+        printf("before reverse array[]:%d\n",ptr[i]);
     reverse_array(array, size,ptr);
 }
