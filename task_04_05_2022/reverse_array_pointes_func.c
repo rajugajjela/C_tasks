@@ -2,7 +2,7 @@
 void reverse_array(int *array, int size,int *ptr)
 {
     for (int i = size - 1; i >= 0; i--)
-        printf("array[%d]:%d\n", i, ptr[i]);
+        printf("array[]:%d\n", ptr[i]);
 }
 int main()
 {
@@ -10,5 +10,7 @@ int main()
     int *ptr;
     int size = sizeof(array) / sizeof(int);
     ptr=array;
+    for(int i =0;i<size;i++)
+    printf("before reverse array[]:%d\n",ptr[i]);
     reverse_array(array, size,ptr);
 }
