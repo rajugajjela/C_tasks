@@ -28,12 +28,10 @@ void find_index_range(int array[], int size, int from, int until, int i, int num
             {
                 printf("\nINDEX of the element:%d\n",i);
             }
-            else
-            printf("\ngiven number not in the range");
-            break;
         }
     }
-
+    if(number!=array[i])
+           printf("\ngiven number not in the range");
 }
 int main()
 {
