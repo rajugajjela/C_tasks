@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h> // For exit()
 int main()
 {
     FILE *source_file, *destination_file;
@@ -12,7 +11,6 @@ int main()
     if (source_file == NULL)
     {
         printf("Cannot open file %s \n", filename);
-        exit(0);
     }
     printf("Enter the filename to open for writing \n");
     scanf("%s", filename);
@@ -21,7 +19,6 @@ int main()
     if (source_file == NULL)
     {
         printf("Cannot open file %s \n", filename);
-        exit(0);
     }
 
     // Read the contents of the file
